@@ -52,16 +52,24 @@
                 <strong> AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</strong>
             </div>
             <div id="ingressos">
-                <img src="qui.svg" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id = "quinta" alt="Imagem Ingresso de Quinta Feira">
-                <img src="sex.svg" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" id = "sexta" alt="Imagem Ingresso de Sexta Feira">
-                <img src="sab.svg" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id = "sabado" alt="Imagem Ingresso de Sabado">
-                <img src="dom.svg" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id = "domingo" alt="Imagem Ingresso de Domingo">
+                <img src="qui.svg" onclick="selectCard('#quinta')"  onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id = "quinta" alt="Imagem Ingresso de Quinta Feira">
+                <img src="sex.svg" onclick="selectCard('#sexta')"  onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" id = "sexta" alt="Imagem Ingresso de Sexta Feira">
+                <img src="sab.svg" onclick="selectCard('#sabado')"  onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id = "sabado" alt="Imagem Ingresso de Sabado">
+                <img src="dom.svg" onclick="selectCard('#domingo')"  onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id = "domingo" alt="Imagem Ingresso de Domingo">
             </div>
         </div>
         <div id="botao-compra">
-            <button> GARANTA O SEU!</button>
+            <button onclick="showSelectedCards()"> GARANTA O SEU!</button>
         </div>
     </section>
+
+    <div>
+        <form action="https://www.google.com">
+            <input type="email" placeholder="Seu email" required>
+            <input type="submit">
+        </form>
+
+    </div>
 
 
     <script src="cronometro.js"> </script>
